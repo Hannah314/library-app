@@ -1,13 +1,13 @@
 import React from 'react';
 
-class Library extends React.Component {
+class Login extends React.Component {
   render() {
     return (
       <div className="App">
-        <p>Library</p>
+        <p>Login</p>
       </div>
     );
   }
 }
 
-export default Library;
+export default Login;

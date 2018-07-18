@@ -47,10 +47,32 @@ table {
 	border-spacing: 0;
 }
 
+/***** GENERAL STYLES *****/
+body {font-family: Lato, sans-serif; color: #333; background: #f5f5f5;}
+*:focus {outline: none;}
+
 /***** HEADER STYLES *****/
-header {height: 64px; display: flex; align-items: center; justify-content: space-between; background: #f5f5f5; margin-bottom: 24px;}
+header {height: 80px; display: flex; align-items: center; justify-content: space-between; background: #fff; margin-bottom: 24px; padding: 0 48px;}
+header img {height: 48px;}
+.user {margin-right: 24px;}
+
+/***** FILTER STYLES *****/
+.filters {display: flex; justify-content: center; align-items: center;}
+.search-container {background: #fff; border-radius: 3px; display: flex; align-items: center; padding: 8px; margin-right: 16px;}
+.search-container input {border: none; margin-right: 16px; min-width: 160px;}
+.filters select {border: none; background: #fff; height: 40px; width: 120px; border-radius: 3px;}
+
+/***** TABLE STYLES *****/
+.table-container {max-width: 1200px; margin: 48px auto 0 auto;}
+.table {display: grid; grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr; grid-template-rows: 40px 1fr;}
+.table > div {display: contents;}
+.table-header {color: #8e8d94; font-size: 13px;}
+.table-row > p {height: 64px; background: #fff; line-height: 64px; white-space: nowrap; border-radius: 3px; margin-bottom: 16px; font-size: 14px;}
+.table-row > p:first-child {padding-left: 16px;}
+.table-row > p:last-child {padding-right: 16px; display: flex; align-items: center;}
 
 /***** FLEX STYLES *****/
 .flex {display: flex;}
 .flex-align-center {display: flex; align-items: center;}
 .flex-justify-space {display: flex; justify-content: space-between;}
+.flex-justify-center {display: flex; justify-content: center;}

@@ -4,18 +4,17 @@ class Header extends React.Component {
   render() {
     return (
       <header className="flex-justify-space flex-align-center">
-        <p>Library</p>
+        <img src="/images/bb-logo.png" alt="logo" />
         {this.props.user ? (
           <div className="flex-align-center">
             <div className="user">
-              <img src={this.props.user.image} />
-              <p>{this.props.user.name}</p>
+              <p>{this.props.user.displayName}</p>
             </div>
-            <i className="material-icons">exit_to_app</i>
+            <i className="material-icons" onClick={() => this.props.logout()}>exit_to_app</i>
           </div>
         ) : (
           <div>
-            <button>Sign In</button>
+            <button onClick={() => this.props.login()}>Login</button>
           </div>
         )}
       </header>
